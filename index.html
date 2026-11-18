@@ -1,197 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Bros Web</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101820">
+  <meta name="description" content="Un archivo interactivo del universo de Mario: juegos, personajes, primeras apariciones e historia.">
+  <title>Mario Archive — Juegos y personajes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/style.css">
+  <script src="index.js" defer></script>
 </head>
 <body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Mario Archive, inicio">
+      <span class="brand-mark">M<span>!</span></span>
+      <span class="brand-name">MARIO<span>ARCHIVE</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#juegos">Juegos <span>01</span></a>
+      <a href="#personajes">Personajes <span>02</span></a>
+      <a href="#archivo">El archivo <span>03</span></a>
+    </nav>
+    <span class="header-status"><i></i> PLAYER 1 / READY</span>
+  </header>
 
-    <header class="header">
-        <div class="menu">
-            <div class="logo">
-                <a href="#">Rodri<span>Developer</span></a>
-                <img id="btn--menu" src="img/abrir-menu.svg" alt="Icono Menu">
-            </div>
-            <div id="navegacion" class="navegacion">
-                <ul class="navegacion--lista">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> ARCHIVO INTERACTIVO · DESDE 1981</p>
+        <h1>UN UNIVERSO.<br><em>MUCHAS</em> PARTIDAS.</h1>
+        <p class="hero-intro">De los salones arcade al Reino Champiñón. Explorá los juegos que marcaron generaciones y conocé a los personajes que hicieron historia.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#juegos">EXPLORAR JUEGOS <span>↘</span></a>
+          <a class="button button-quiet" href="#personajes">ELEGIR PERSONAJE <span>↘</span></a>
         </div>
-    </header>
-
-    <aside class="banner">
-        <div class="banner--contenedor">
-            <div class="banner--info">
-                <h1>Universo Mario Bros</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corporis asperiores consequatur tempora exercitationem neque quia, reprehenderit consectetur laboriosam veniam. Quas doloremque illo harum voluptas iure modi facilis mollitia tenetur?</p>
-                <a href="#">Jugar</a>
-            </div>
-            <div class="banner--imagen">
-                <picture>
-                    <source srcset="./img/personajes.webp" type="image/webp">
-                    <source srcset="./img/personajes.png" type="image/png">
-                    <img src="img/personajes.png" alt="Imagen Personajes">
-                </picture>
-                <picture>
-                    <source srcset="./img/family.webp" type="image/webp">
-                    <source srcset="./img/family.png" type="image/png">
-                    <img src="img/family.png" alt="Imagen Family">
-                </picture>
-            </div>
+        <div class="hero-meta">
+          <span><b>1981</b> PRIMERA APARICIÓN</span>
+          <span><b>55</b> PERSONAJES</span>
+          <span><b>31</b> JUEGOS DESTACADOS</span>
         </div>
-    </aside>
-
-    <aside class="nubes--svg">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1440" height="150" preserveAspectRatio="none" viewBox="0 0 1440 150">
-            <g mask="url(&quot;#SvgjsMask1045&quot;)" fill="none">
-                <path d="M1560 150L0 150 L0 91.97Q57.02 28.98, 120 86Q160.7 54.7, 192 95.41Q218.16 49.57, 264 75.73Q326.7 18.43, 384 81.13Q429.71 54.84, 456 100.55Q484.38 56.92, 528 85.3Q590.7 28, 648 90.69Q689.14 59.83, 720 100.97Q743.75 52.72, 792 76.46Q833.87 46.32, 864 88.19Q905.32 57.5, 936 98.82Q984.29 27.11, 1056 75.4Q1098.1 45.5, 1128 87.59Q1193.69 33.28, 1248 98.98Q1296.63 27.61, 1368 76.23Q1410.37 46.6, 1440 88.97Q1505.55 34.52, 1560 100.07z" fill="rgba(93, 24, 24, 1)"></path>
-                <path d="M1536 150L0 150 L0 96.07Q36.9 60.97, 72 97.86Q118.67 72.53, 144 119.21Q202.03 57.25, 264 115.28Q290.03 69.31, 336 95.35Q398.07 37.42, 456 99.49Q499.83 71.32, 528 115.16Q554.21 69.37, 600 95.58Q642.02 65.6, 672 107.62Q737.46 53.08, 792 118.54Q815.95 70.49, 864 94.43Q930.04 40.47, 984 106.51Q1049.11 51.62, 1104 116.72Q1153.71 46.44, 1224 96.15Q1265.12 65.27, 1296 106.38Q1361.81 52.19, 1416 117.99Q1469.27 51.26, 1536 104.53z" fill="rgba(125, 37, 37, 1)"></path>
-                <path d="M1464 150L0 150 L0 136.02Q49.88 65.91, 120 115.79Q156.21 80, 192 116.22Q235.5 87.72, 264 131.21Q300.37 95.58, 336 131.95Q365.86 89.8, 408 119.66Q441.01 80.68, 480 113.69Q527.98 89.67, 552 137.65Q581.84 95.49, 624 125.33Q677.82 59.15, 744 112.97Q791.55 88.53, 816 136.08Q846.26 94.34, 888 124.6Q942.4 59, 1008 113.41Q1078.63 64.05, 1128 134.68Q1158.26 92.94, 1200 123.2Q1243.3 94.5, 1272 137.79Q1322.96 68.76, 1392 119.72Q1435.56 91.28, 1464 134.84z" fill="rgba(177, 53, 53, 1)"></path>
-                <path d="M1464 150L0 150 L0 156.57Q32.36 116.93, 72 149.29Q102.84 108.13, 144 138.96Q180.52 103.48, 216 139.99Q257.38 109.37, 288 150.75Q320.72 111.47, 360 144.18Q390.5 102.68, 432 133.18Q479.99 109.17, 504 157.15Q534.13 115.28, 576 145.41Q629.91 79.32, 696 133.23Q743.76 109, 768 156.76Q798.91 115.68, 840 146.59Q869.71 104.3, 912 134.01Q976.95 78.96, 1032 143.92Q1098.44 90.37, 1152 156.81Q1175.98 108.79, 1224 132.77Q1289.96 78.74, 1344 144.7Q1409.58 90.28, 1464 155.86z" fill="white"></path>
-            </g>
-            <defs>
-                <mask id="SvgjsMask1045">
-                    <rect width="1440" height="150" fill="#ffffff"></rect>
-                </mask>
-            </defs>
-        </svg>
-    </aside>
-
-    <main class="personajes">
-        <h2>Personajes</h2>
-        <p>Estos son algunos de los tantos personajes en el universo Mario Bros.</p>
-        <ul class="cards">
-            <li>
-                <article class="card">
-                    <picture>
-                        <source srcset="./img/cards-back.webp" type="image/webp">
-                        <source srcset="./img/cards-back.png" type="image/png">
-                        <img src="img/cards-back.png" alt="Imagen Cards Back">
-                    </picture>
-                    <picture>
-                        <source srcset="./img/mario.webp" type="image/webp">
-                        <source srcset="./img/mario.png" type="image/png">
-                        <img src="img/mario.png" alt="Imagen Mario">
-                    </picture>
-                </article>
-            </li>
-            <li>
-                <article class="card">
-                    <picture>
-                        <source srcset="./img/cards-back.webp" type="image/webp">
-                        <source srcset="./img/cards-back.png" type="image/png">
-                        <img src="img/cards-back.png" alt="Imagen Cards Back">
-                    </picture>
-                    <picture>
-                        <source srcset="./img/luigi.webp" type="image/webp">
-                        <source srcset="./img/luigi.png" type="image/png">
-                        <img src="img/luigi.png" alt="Imagen Luigi">
-                    </picture>
-                </article>
-            </li>
-            <li>
-                <article class="card">
-                    <picture>
-                        <source srcset="./img/cards-back.webp" type="image/webp">
-                        <source srcset="./img/cards-back.png" type="image/png">
-                        <img src="img/cards-back.png" alt="Imagen Cards Back">
-                    </picture>
-                    <picture>
-                        <source srcset="./img/hongo-cafe.webp" type="image/webp">
-                        <source srcset="./img/hongo-cafe.png" type="image/png">
-                        <img src="img/hongo-cafe.png" alt="Imagen Hongo Cafe">
-                    </picture>
-                </article>
-            </li>
-            <li>
-                <article class="card">
-                    <picture>
-                        <source srcset="./img/cards-back.webp" type="image/webp">
-                        <source srcset="./img/cards-back.png" type="image/png">
-                        <img src="img/cards-back.png" alt="Imagen Cards Back">
-                    </picture>
-                    <picture>
-                        <source srcset="./img/tortuga-nube.webp" type="image/webp">
-                        <source srcset="./img/tortuga-nube.png" type="image/png">
-                        <img src="img/tortuga-nube.png" alt="Imagen Tortuga Nube">
-                    </picture>
-                </article>
-            </li>
-        </ul>
-    </main>
-
-    <section class="seleccion">
-        <h2>Lorem Ipsum</h2>
-        <div class="seleccion--container">
-            <div class="imagen--seleccion">
-                <img width="300" height="300" id="imagen--actual" src="img/mario.webp" alt="Imagen Personaje Mario">
-                <div id="imagenes--personajes" class="imagenes--personajes">
-                    <picture>
-                        <source srcset="./img/marioa.webp" type="image/webp">
-                        <source srcset="./img/marioa.png" type="image/png">
-                        <img class="personaje--seleccionar" src="img/marioa.png" alt="Imagen MarioA">
-                    </picture>
-                    <picture>
-                        <source srcset="./img/mariob.webp" type="image/webp">
-                        <source srcset="./img/mariob.png" type="image/png">
-                        <img class="personaje--seleccionar" src="img/mariob.png" alt="Imagen MarioB">
-                    </picture>
-                    <picture>
-                        <source srcset="./img/marioc.webp" type="image/webp">
-                        <source srcset="./img/marioc.png" type="image/png">
-                        <img class="personaje--seleccionar" src="img/marioc.png" alt="Imagen MarioC">
-                    </picture>
-                </div>
-            </div>
-            <div class="potencial">
-                <h3>Informacion</h3>
-                <ul class="potencial--info">
-                    <li>
-                        <p>Daño</p>
-                        <div class="porcentaje">
-                            100%
-                        </div>
-                    </li>
-                    <li>
-                        <p>Velocidad</p>
-                        <div class="porcentaje">
-                            100%
-                        </div>
-                    </li>
-                    <li>
-                        <p>Salto</p>
-                        <div class="porcentaje">
-                            100%
-                        </div>
-                    </li>
-                </ul>
-            </div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración de personajes del universo de Mario">
+        <div class="hero-art-frame">
+          <div class="art-sun"></div>
+          <div class="art-cloud art-cloud-one"></div>
+          <div class="art-cloud art-cloud-two"></div>
+          <div class="art-pipe"><i></i></div>
+          <img class="hero-characters" src="img/personajes.webp" alt="Personajes del universo de Mario" fetchpriority="high">
+          <img class="hero-family" src="img/family.webp" alt="" aria-hidden="true">
+          <span class="art-stamp">WORLD<br>01</span>
+          <span class="art-caption">MUSHROOM KINGDOM / 8-BIT MEMORIES</span>
         </div>
+        <span class="hero-side-note">INSERT COIN <b>▶</b></span>
+      </div>
+      <div class="hero-bottom-line">
+        <span>PRESS START TO EXPLORE</span>
+        <span class="pixel-squares" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        <span>SCROLL TO CONTINUE ↓</span>
+      </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer--contenedor">
-            <ul class="navegacion--lista navegacion--footer">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Portafolio</a></li>
-            </ul>
-            <p>&copy RodriDeveloper @2023</p>
+    <section class="games-section section-wrap" id="juegos" aria-labelledby="games-title">
+      <div class="section-kicker"><span>01 / GAME LIBRARY</span><span>LA HISTORIA SIGUE EN JUEGO</span></div>
+      <div class="section-heading">
+        <div>
+          <p class="overline">EL ARCHIVO DE JUEGOS</p>
+          <h2 id="games-title">UNA SAGA,<br><em>INFINITAS FORMAS.</em></h2>
         </div>
-    </footer>
-    <script src="index.js"></script>
+        <p class="section-description">Plataformas, carreras, aventuras y RPG. Una selección de títulos clave para recorrer la evolución del universo Mario, desde los primeros píxeles hasta las nuevas consolas.</p>
+      </div>
+
+      <div class="games-toolbar">
+        <div class="filter-row" id="game-filters" aria-label="Filtrar juegos">
+          <button class="filter-chip is-active" type="button" data-game-filter="all" aria-pressed="true">TODOS</button>
+          <button class="filter-chip" type="button" data-game-filter="platform" aria-pressed="false">PLATAFORMAS</button>
+          <button class="filter-chip" type="button" data-game-filter="kart" aria-pressed="false">CARRERAS</button>
+          <button class="filter-chip" type="button" data-game-filter="rpg" aria-pressed="false">RPG / AVENTURA</button>
+          <button class="filter-chip" type="button" data-game-filter="party" aria-pressed="false">OTROS</button>
+        </div>
+        <span class="results-count" id="game-count">31 JUEGOS</span>
+      </div>
+
+      <div class="games-grid" id="games-grid" aria-live="polite"></div>
+
+      <div class="game-feature" id="game-feature" aria-live="polite">
+        <div class="feature-label"><span class="feature-led"></span> EN FOCO</div>
+        <div class="feature-year" id="game-feature-year">1985</div>
+        <div class="feature-copy">
+          <p class="overline" id="game-feature-series">SERIE PRINCIPAL / PLATAFORMAS</p>
+          <h3 id="game-feature-title">Super Mario Bros.</h3>
+          <p id="game-feature-description">El salto que definió una era. Un mundo de tuberías, castillos y secretos que convirtió a Mario en un ícono.</p>
+        </div>
+        <div class="feature-platform" id="game-feature-platform">NES <span>▰</span></div>
+      </div>
+    </section>
+
+    <section class="character-section" id="personajes" aria-labelledby="characters-title">
+      <div class="character-section-inner">
+        <div class="section-kicker"><span>02 / CHARACTER SELECT</span><span>CHOOSE YOUR PLAYER</span></div>
+        <div class="section-heading character-heading">
+          <div>
+            <p class="overline">EL REINO CHAMPIÑÓN Y MÁS ALLÁ</p>
+            <h2 id="characters-title">CONOCÉ AL<br><em>ELENCO.</em></h2>
+          </div>
+          <p class="section-description">Héroes, rivales, aliados y enemigos. Elegí un personaje para descubrir quién es, qué lugar ocupa en este universo y en qué juego apareció por primera vez.</p>
+        </div>
+
+        <div class="character-console">
+          <article class="character-detail" id="character-detail" aria-live="polite">
+            <div class="detail-top">
+              <span class="detail-index" id="character-index">PLAYER 001</span>
+              <span class="detail-role" id="character-role">HÉROE / PROTAGONISTA</span>
+            </div>
+            <div class="detail-character-stage">
+              <div class="stage-orbit stage-orbit-one"></div>
+              <div class="stage-orbit stage-orbit-two"></div>
+              <div class="stage-cross" aria-hidden="true">+</div>
+              <img id="character-image" src="img/mario.webp" alt="Mario">
+              <div class="character-symbol" id="character-symbol" hidden aria-hidden="true">🍄</div>
+              <span class="stage-coordinate" id="character-coordinate">MUSHROOM KINGDOM · 001</span>
+            </div>
+            <div class="character-name-row">
+              <div>
+                <p class="overline">PERSONAJE SELECCIONADO</p>
+                <h3 id="character-name">Mario</h3>
+              </div>
+              <span class="character-year" id="character-year">1981</span>
+            </div>
+            <p class="character-bio" id="character-bio">El héroe del Reino Champiñón. Su ingenio, valentía y salto inconfundible lo llevaron desde los arcades hasta aventuras por galaxias enteras.</p>
+            <div class="debut-card">
+              <span class="debut-icon">FIRST<br>APPEARANCE</span>
+              <div>
+                <p class="overline">PRIMERA APARICIÓN</p>
+                <strong id="character-debut">Donkey Kong</strong>
+                <span id="character-debut-note">Arcade · 1981 · Su primera aparición como Jumpman.</span>
+              </div>
+            </div>
+            <div class="character-connections">
+              <span>VÍNCULOS</span>
+              <p id="character-connections">Luigi · Princesa Peach · Toad · Yoshi</p>
+            </div>
+          </article>
+
+          <div class="character-roster">
+            <div class="roster-header">
+              <div>
+                <p class="overline">SELECCIÓN DE PERSONAJES</p>
+                <h3>PLAYER ROSTER <span id="character-total">55</span></h3>
+              </div>
+              <label class="character-search" for="character-search">
+                <span aria-hidden="true">⌕</span>
+                <input id="character-search" type="search" placeholder="Buscar personaje…" autocomplete="off">
+                <kbd>/</kbd>
+              </label>
+            </div>
+            <div class="character-filters" id="character-filters" aria-label="Filtrar personajes">
+              <button class="filter-chip is-active" type="button" data-character-filter="all" aria-pressed="true">TODOS</button>
+              <button class="filter-chip" type="button" data-character-filter="heroes" aria-pressed="false">HÉROES</button>
+              <button class="filter-chip" type="button" data-character-filter="rivals" aria-pressed="false">RIVALES</button>
+              <button class="filter-chip" type="button" data-character-filter="koopa" aria-pressed="false">TROPA KOOPA</button>
+              <button class="filter-chip" type="button" data-character-filter="villains" aria-pressed="false">VILLANOS</button>
+              <button class="filter-chip" type="button" data-character-filter="enemies" aria-pressed="false">ENEMIGOS</button>
+            </div>
+            <div class="character-grid" id="character-grid" aria-live="polite"></div>
+            <p class="no-characters" id="no-characters" hidden>No encontramos personajes con esa búsqueda.</p>
+            <div class="roster-footer"><span>SELECT A CHARACTER</span><span>↖ LA FICHA SE ACTUALIZA AL ELEGIR UNO</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="archive-note section-wrap" id="archivo">
+      <div class="archive-ticket">
+        <span class="ticket-label">MARIO ARCHIVE / FIELD NOTES</span>
+        <div class="ticket-number">1981<span>—</span>2026</div>
+        <div class="ticket-copy">
+          <p class="overline">UNA HISTORIA EN CONSTANTE EXPANSIÓN</p>
+          <h2>NO HAY UNA SOLA<br>FORMA DE JUGAR.</h2>
+          <p>Este archivo reúne una selección de entregas y personajes de distintas etapas y series. Las fechas de debut se refieren a la primera aparición conocida del personaje, no necesariamente a su primera aparición como protagonista.</p>
+        </div>
+        <div class="ticket-stamp">ARCHIVE<br>COMPLETE?</div>
+      </div>
+      <div class="sources-strip">
+        <span>CONSULTÁ LAS FUENTES</span>
+        <a href="https://mario.nintendo.com/history/" target="_blank" rel="noopener noreferrer">HISTORIA OFICIAL DE NINTENDO ↗</a>
+        <a href="https://superluigibros.com/character-bios/" target="_blank" rel="noopener noreferrer">ARCHIVO DE BIOGRAFÍAS ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#inicio">MARIO<span>ARCHIVE</span></a>
+    <p>UN HOMENAJE DE FANS AL UNIVERSO DE MARIO. NO ES UN SITIO OFICIAL NI ESTÁ AFILIADO A NINTENDO.</p>
+    <a href="#inicio">VOLVER ARRIBA ↑</a>
+  </footer>
 </body>
 </html>
